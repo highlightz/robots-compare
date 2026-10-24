@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 1,
-  "updatedAt": "2026-10-23T00:00:00.000Z",
+  "version": 2,
+  "updatedAt": "2026-10-24T01:26:21.888Z",
   "manufacturers": [
     {
       "id": "unitree",
@@ -14,6 +14,30 @@
       "name": "智元机器人",
       "englishName": "AGIBOT",
       "website": "https://www.agibot.com/"
+    },
+    {
+      "id": "tesla",
+      "name": "特斯拉",
+      "englishName": "Tesla",
+      "website": "https://www.tesla.com/"
+    },
+    {
+      "id": "figure",
+      "name": "Figure AI",
+      "englishName": "Figure",
+      "website": "https://www.figure.ai/"
+    },
+    {
+      "id": "boston-dynamics",
+      "name": "波士顿动力",
+      "englishName": "Boston Dynamics",
+      "website": "https://bostondynamics.com/"
+    },
+    {
+      "id": "galbot",
+      "name": "银河通用",
+      "englishName": "Galbot",
+      "website": "https://www.galbot.com/"
     }
   ],
   "sources": [
@@ -56,6 +80,54 @@
       "url": "https://www.agibot.com/products/G1",
       "publishedAt": null,
       "accessedAt": "2026-10-23"
+    },
+    {
+      "id": "tesla-optimus-overview",
+      "title": "Tesla Optimus 官方项目概述（代际未注明）",
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/SI",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "figure-03-product",
+      "title": "Figure 03 官方产品规格",
+      "publisher": "Figure",
+      "url": "https://www.figure.ai/figure",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "boston-atlas-product",
+      "title": "Atlas 工业产品版官方规格",
+      "publisher": "Boston Dynamics",
+      "url": "https://bostondynamics.com/products/atlas/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "galbot-g1",
+      "title": "Galbot G1 官方产品规格",
+      "publisher": "银河通用",
+      "url": "https://www.galbot.com/g1/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "galbot-s1",
+      "title": "Galbot S1 官方产品规格",
+      "publisher": "银河通用",
+      "url": "https://www.galbot.com/s1/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "galbot-et1",
+      "title": "Galbot ET1 标准版 / 专业版 / 旗舰版官方规格",
+      "publisher": "银河通用",
+      "url": "https://www.galbot.com/et1/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-24"
     }
   ],
   "robots": [
@@ -1232,6 +1304,1172 @@
           "reviewStatus": "pending_review",
           "condition": "",
           "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "tesla-optimus-overview",
+      "productId": "tesla-optimus",
+      "manufacturerId": "tesla",
+      "name": "Optimus",
+      "configuration": "官网展示版本（代际未注明）",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "tesla-optimus-overview",
+      "description": "特斯拉通用双足人形机器人项目。所引官网概述未明确展示版本的代际，也没有可归属该配置的完整参数表；暂不收录其他代际规格、目标售价或量产传闻，交付状态待核实。",
+      "tags": [
+        "Optimus",
+        "通用人形",
+        "代际待核实"
+      ],
+      "image": "",
+      "specs": {
+        "height": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "tesla-optimus-overview",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "figure-03",
+      "productId": "figure-03",
+      "manufacturerId": "figure",
+      "name": "Figure 03",
+      "configuration": "官网产品配置",
+      "bodyType": "biped",
+      "marketStatus": "announced",
+      "sourceId": "figure-03-product",
+      "description": "Figure 当前官网的人形机器人产品。规格与 Figure 02 分开，页面描述的家务应用不作为本库独立验证过的自主能力或商业收益。交付与采购条件待核实。",
+      "tags": [
+        "全尺寸",
+        "电驱",
+        "家务应用"
+      ],
+      "image": "assets/figure-03.webp",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 172.72,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "原文 5 英尺 8 英寸，即 68 × 2.54 cm；换算小数不表示测量精度",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 61,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网重量；未说明是否含电池或末端配置",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "known",
+          "value": 20,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 Payload；未说明单臂/双臂、姿态及持续条件，不能理解为单臂持续 20 kg",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "known",
+          "value": 1.2,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 Speed；地面、负载与测试条件未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "known",
+          "value": 5,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 Runtime；任务、负载与测试条件未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "figure-03-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "boston-atlas-industrial",
+      "productId": "boston-atlas-industrial",
+      "manufacturerId": "boston-dynamics",
+      "name": "Atlas",
+      "configuration": "工业产品版",
+      "bodyType": "biped",
+      "marketStatus": "pilot",
+      "sourceId": "boston-atlas-product",
+      "description": "当前官网的电驱工业人形产品，不混用早期液压 Atlas 或电驱原型规格。厂商提供早期客户试点入口；自动换电不等于单次电池连续工作 24 小时。",
+      "tags": [
+        "工业搬运",
+        "电驱",
+        "自动换电"
+      ],
+      "image": "assets/boston-atlas-product.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 190,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 1.9 m，换算为 cm；当前工业产品版",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 90,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网当前工业产品版重量；电池包含口径未单列",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "known",
+          "value": 56,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网整机自由度；未逐项给出末端计数范围",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "known",
+          "value": 30,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网持续搬运负载 Sustained；非单臂口径。另列瞬时 50 kg，不作为持续负载",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "known",
+          "value": 4,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 Battery Life；具体任务条件未列。自动换电能力不计入单次续航",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "触觉感知与 360° 相机视野",
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网感知描述；不据此推断传感器数量或独立实测效果",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "boston-atlas-product",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "galbot-g1",
+      "productId": "galbot-g1",
+      "manufacturerId": "galbot",
+      "name": "Galbot G1",
+      "configuration": "官网产品配置",
+      "bodyType": "wheeled",
+      "marketStatus": "announced",
+      "sourceId": "galbot-g1",
+      "description": "轮式双臂作业平台。身高按官网最大整机高度记录，不用升降行程反推最低高度；购买入口不作为现货或已核实交付的证明。官网规格图片标注为 S1 占位图，本库暂不采用。",
+      "tags": [
+        "轮式双臂",
+        "可升降",
+        "银河星脑"
+      ],
+      "image": "",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": {
+            "min": null,
+            "max": 173
+          },
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "原文整机最高 1730 mm；最低高度未列，650 mm 是腿部升降高度差，不是最低身高",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 92.5,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网机身重量；电池包含口径未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "known",
+          "value": 21,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网合计，不含底盘及末端：颈部 2、手臂 7×2、腰部 3、腿部 2",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "known",
+          "value": "可更换灵巧手、吸盘或夹爪",
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "可更换选项不代表全部末端均为随机器标配",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "known",
+          "value": 5,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "腕部中心单臂负载；官网双臂合计 10 kg，持续时间和姿态未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "known",
+          "value": 1.5,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "四轮全向底盘最大速度，不是典型任务速度",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "known",
+          "value": 8,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网工作时长；任务、负载及工况未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "known",
+          "value": 30000,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "原文 48 V 30 Ah；仅将 Ah 换算为 mAh，不与不同电压电池直接比较",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "双目相机×1；躯干 RGB×4、IMU×1；双腕深度相机×2、六维力×2；底盘 3D 雷达×1、超声×8、IMU×1",
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "左右腕传感器数量为合计；按产品页分部位列表记录",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "known",
+          "value": "NVIDIA AGX Orin 64GB（275 TOPS）",
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网算力平台；TOPS 不代表应用实测性能",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "galbot-s1",
+      "productId": "galbot-s1",
+      "manufacturerId": "galbot",
+      "name": "Galbot S1",
+      "configuration": "官网产品配置",
+      "bodyType": "wheeled",
+      "marketStatus": "announced",
+      "sourceId": "galbot-s1",
+      "description": "工业与仓储重载轮式双臂平台。50 kg 是双臂最高负载，不是单臂持续负载；换电连续运行与满电续航分开。官网购买入口不作为交期或客户收益的证明。",
+      "tags": [
+        "轮式双臂",
+        "工业搬运",
+        "热插拔电池"
+      ],
+      "image": "assets/galbot-s1.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": {
+            "min": null,
+            "max": 179.3
+          },
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "原文整机最大高度 1793 mm；750 mm 是升降行程，不能代替最低身高",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 320,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网整机重量；电池包含口径未单列",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "官网仅列颈部 2、双臂 7×2、升降 1；未明确完整整机计数范围，暂不将分项相加写作全机自由度",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "known",
+          "value": 50,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网双臂最高负载；非单臂值，姿态及持续工况未说明",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "known",
+          "value": 1.5,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网四轮转向全向底盘最高速度；非典型任务速度",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "known",
+          "value": 8,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网满电运行时长；任务条件未给出。24/7 来自换电，不是单次电池续航",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "官网列双电池 48 V 30 Ah ×2，未直接给出整机可用 Wh；本次不将标称乘积当实测可用能量",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "官网 48 V 30 Ah ×2；保留双电池信息，当前字段不能表达组合方式，不直接合并为 60000 mAh",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "头部双目相机×1、3D 雷达×1；胸部深度相机×2、六维力×2；底盘 3D 雷达×2",
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "按官网分部位数量抄录，不推断额外传感器",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "known",
+          "value": "NVIDIA AGX Orin 64GB（275 TOPS）",
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网算力平台；TOPS 不代表应用实测性能",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-s1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "galbot-et1-standard",
+      "productId": "galbot-et1",
+      "manufacturerId": "galbot",
+      "name": "Galbot ET1 银河星仔",
+      "configuration": "标准版",
+      "bodyType": "biped",
+      "marketStatus": "announced",
+      "sourceId": "galbot-et1",
+      "description": "面向互动演艺的双足平台。标准版、专业版与旗舰版分开记录；系列共用尺寸与重量不代表选配后的实测值。官网购买入口不等于已核实交期。",
+      "tags": [
+        "互动演艺",
+        "银河星仔",
+        "ET1"
+      ],
+      "image": "assets/galbot-et1.webp",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 125,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网站立高度 1250 mm，换算为 cm；系列共用规格，未分版本测量",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 32,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网带电池重量；系列共用规格，未分版本说明选配后差异",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "known",
+          "value": 26,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "标准版总自由度 26，不继承专业版/旗舰版的灵巧手自由度",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "双目摄像头",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "产品页视觉感知栏；并非完整传感器清单",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "known",
+          "value": "RK3588 + RDK X5",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "主控 RK3588 + RDK X5；高性能算力栏仅给专业版/旗舰版，不作为标准版标配",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "galbot-et1-pro",
+      "productId": "galbot-et1",
+      "manufacturerId": "galbot",
+      "name": "Galbot ET1 银河星仔",
+      "configuration": "专业版 Pro",
+      "bodyType": "biped",
+      "marketStatus": "announced",
+      "sourceId": "galbot-et1",
+      "description": "面向互动演艺的双足平台。标准版、专业版与旗舰版分开记录；系列共用尺寸与重量不代表选配后的实测值。官网购买入口不等于已核实交期。",
+      "tags": [
+        "互动演艺",
+        "银河星仔",
+        "ET1"
+      ],
+      "image": "assets/galbot-et1.webp",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 125,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网站立高度 1250 mm，换算为 cm；系列共用规格，未分版本测量",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 32,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网带电池重量；系列共用规格，未分版本说明选配后差异",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "known",
+          "value": 38,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "专业版/旗舰版原文 26 + 12，合计 38，包含增加的灵巧手自由度",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "known",
+          "value": "灵巧手",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网专业版/旗舰版增加灵巧手；增加自由度合计 12，不能理解为单手 12",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "双目摄像头",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "产品页视觉感知栏；并非完整传感器清单",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "known",
+          "value": "RK3588 + RDK X5；Orin Nano（40 TOPS）",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "主控 RK3588 + RDK X5；附加算力按对应版本抄录，TOPS 非跨平台统一性能实测",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        }
+      }
+    },
+    {
+      "id": "galbot-et1-flagship",
+      "productId": "galbot-et1",
+      "manufacturerId": "galbot",
+      "name": "Galbot ET1 银河星仔",
+      "configuration": "旗舰版 Flagship",
+      "bodyType": "biped",
+      "marketStatus": "announced",
+      "sourceId": "galbot-et1",
+      "description": "面向互动演艺的双足平台。标准版、专业版与旗舰版分开记录；系列共用尺寸与重量不代表选配后的实测值。官网购买入口不等于已核实交期。",
+      "tags": [
+        "互动演艺",
+        "银河星仔",
+        "ET1"
+      ],
+      "image": "assets/galbot-et1.webp",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 125,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网站立高度 1250 mm，换算为 cm；系列共用规格，未分版本测量",
+          "checkedAt": "2026-10-24"
+        },
+        "weight": {
+          "status": "known",
+          "value": 32,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网带电池重量；系列共用规格，未分版本说明选配后差异",
+          "checkedAt": "2026-10-24"
+        },
+        "dof": {
+          "status": "known",
+          "value": 38,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "专业版/旗舰版原文 26 + 12，合计 38，包含增加的灵巧手自由度",
+          "checkedAt": "2026-10-24"
+        },
+        "hand": {
+          "status": "known",
+          "value": "灵巧手",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网专业版/旗舰版增加灵巧手；增加自由度合计 12，不能理解为单手 12",
+          "checkedAt": "2026-10-24"
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "双目摄像头",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "产品页视觉感知栏；并非完整传感器清单",
+          "checkedAt": "2026-10-24"
+        },
+        "compute": {
+          "status": "known",
+          "value": "RK3588 + RDK X5；NX（100 TOPS）",
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "主控 RK3588 + RDK X5；附加算力按对应版本抄录，TOPS 非跨平台统一性能实测",
+          "checkedAt": "2026-10-24"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次所引产品页不足以核实该配置的此项参数；未知不代表没有或不支持",
+          "checkedAt": "2026-10-24"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": "galbot-et1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "本次未核实可归属该配置的公开报价；不以目标售价或电商入口代替成交/交付报价",
+          "checkedAt": "2026-10-24"
         }
       }
     }

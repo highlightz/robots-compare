@@ -1,9 +1,9 @@
 export const FIELDS = [
   { key: 'height', label: '身高', unit: 'cm', type: 'number', group: '身体规格' },
   { key: 'weight', label: '整机重量', unit: 'kg', type: 'number', group: '身体规格' },
-  { key: 'dof', label: '全身自由度', unit: 'DoF', type: 'number', group: '身体规格' },
+  { key: 'dof', label: '自由度', unit: 'DoF', type: 'number', group: '身体规格' },
   { key: 'hand', label: '末端执行器', unit: '', type: 'text', group: '身体规格' },
-  { key: 'payload', label: '手臂负载', unit: 'kg', type: 'number', group: '运动与操作' },
+  { key: 'payload', label: '操作负载', unit: 'kg', type: 'number', group: '运动与操作' },
   { key: 'speed', label: '移动速度', unit: 'm/s', type: 'number', group: '运动与操作' },
   { key: 'runtime', label: '工作时间', unit: 'h', type: 'number', group: '电池与工作' },
   { key: 'battery_wh', label: '电池能量', unit: 'Wh', type: 'number', group: '电池与工作' },
