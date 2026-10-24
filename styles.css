@@ -73,3 +73,7 @@
   .claim-filter-bar input { flex-basis: calc(100% - 125px); }
   .claim-filter-bar > span { width: 100%; text-align: right; }
 }
+
+/* Field-level provenance: readable in detail and narrow comparison columns. */
+.spec-value .source-link { display: inline-block; max-width: 100%; overflow-wrap: anywhere; }
+.claim-source-meta { display: block; margin-top: 5px; line-height: 1.6; overflow-wrap: anywhere; }
