@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 3,
-  "updatedAt": "2026-10-24T02:38:04.583Z",
+  "version": 4,
+  "updatedAt": "2026-10-24T05:21:18.939Z",
   "manufacturers": [
     {
       "id": "unitree",
@@ -1656,13 +1656,13 @@
       "bodyType": "biped",
       "marketStatus": "unknown",
       "sourceId": "tesla-optimus-overview",
-      "description": "特斯拉通用双足人形机器人项目。所引官网概述未明确展示版本的代际，也没有可归属该配置的完整参数表；暂不收录其他代际规格、目标售价或量产传闻，交付状态待核实。",
+      "description": "特斯拉通用双足人形机器人项目。所引官网概述未明确展示版本的代际，也没有可归属该配置的完整参数表；暂不收录其他代际规格、目标售价或量产传闻，交付状态待核实。图片来自同一官网 Optimus 概述，仅作代际未注明的展示，不代表最新量产版本。",
       "tags": [
         "Optimus",
         "通用人形",
         "代际待核实"
       ],
-      "image": "",
+      "image": "assets/tesla-optimus-overview.jpg",
       "specs": {
         "height": {
           "status": "unknown",
@@ -2091,13 +2091,13 @@
       "bodyType": "wheeled",
       "marketStatus": "announced",
       "sourceId": "galbot-g1",
-      "description": "轮式双臂作业平台。身高按官网最大整机高度记录，不用升降行程反推最低高度；购买入口不作为现货或已核实交付的证明。官网规格图片标注为 S1 占位图，本库暂不采用。",
+      "description": "轮式双臂作业平台。身高按官网最大整机高度记录，不用升降行程反推最低高度；购买入口不作为现货或已核实交付的证明。官网规格图片标注为 S1 占位图，本库暂不采用。图片采用 G1 官网主视觉视频的场景封面，仅展示上半身，不用于确认具体末端标配。",
       "tags": [
         "轮式双臂",
         "可升降",
         "银河星脑"
       ],
-      "image": "",
+      "image": "assets/galbot-g1-scene.webp",
       "specs": {
         "height": {
           "status": "known",
@@ -2967,13 +2967,13 @@
       "bodyType": "biped",
       "marketStatus": "announced",
       "sourceId": "ubtech-walker-s2-edu",
-      "description": "官方 walker-s2-edu 文档单独记录的配置，尺寸、重量与续航不回填到工业版。文档可访问不等于已确认采购、现货或交付；整机自由度不能由分项自行推算。",
+      "description": "官方 walker-s2-edu 文档单独记录的配置，尺寸、重量与续航不回填到工业版。文档可访问不等于已确认采购、现货或交付；整机自由度不能由分项自行推算。图片为官方 Walker S2 EDU Explorer（探索者）展示图，仅作教育系列外观参考，不用于确认本条手册配置的末端或标配。",
       "tags": [
         "教育科研",
         "Walker S2",
         "文档配置"
       ],
-      "image": "",
+      "image": "assets/ubtech-walker-s2-edu.webp",
       "specs": {
         "height": {
           "status": "known",
@@ -3982,13 +3982,13 @@
       "bodyType": "wheeled",
       "marketStatus": "announced",
       "sourceId": "leju-kuavo5w-maxa",
-      "description": "乐聚轮式双臂平台的具体手册配置。进阶版、MaxA 和 MaxB 末端及算力分开；36 自由度包含灵巧手、折叠臂和底盘，不与不含末端的本体自由度直接比较。文档存在不代表已核实交期。",
+      "description": "乐聚轮式双臂平台的具体手册配置。进阶版、MaxA 和 MaxB 末端及算力分开；36 自由度包含灵巧手、折叠臂和底盘，不与不含末端的本体自由度直接比较。文档存在不代表已核实交期。图片为 MaxA/MaxB 官方手册共用的灵巧手轮臂示意，不用于辨认触觉或精确交付标配。",
       "tags": [
         "夸父",
         "轮式双臂",
         "MaxA（灵巧手）"
       ],
-      "image": "",
+      "image": "assets/leju-kuavo5w-maxa.png",
       "specs": {
         "height": {
           "status": "known",
@@ -4127,13 +4127,13 @@
       "bodyType": "wheeled",
       "marketStatus": "announced",
       "sourceId": "leju-kuavo5w-maxb",
-      "description": "乐聚轮式双臂平台的具体手册配置。进阶版、MaxA 和 MaxB 末端及算力分开；36 自由度包含灵巧手、折叠臂和底盘，不与不含末端的本体自由度直接比较。文档存在不代表已核实交期。",
+      "description": "乐聚轮式双臂平台的具体手册配置。进阶版、MaxA 和 MaxB 末端及算力分开；36 自由度包含灵巧手、折叠臂和底盘，不与不含末端的本体自由度直接比较。文档存在不代表已核实交期。图片为 MaxA/MaxB 官方手册共用的灵巧手轮臂示意，不用于辨认触觉或精确交付标配。",
       "tags": [
         "夸父",
         "轮式双臂",
         "MaxB（触觉灵巧手）"
       ],
-      "image": "",
+      "image": "assets/leju-kuavo5w-maxa.png",
       "specs": {
         "height": {
           "status": "known",
@@ -5184,13 +5184,13 @@
       "bodyType": "biped",
       "marketStatus": "unknown",
       "sourceId": "agility-digit-5-launch",
-      "description": "官网新代际发布资料明确区分已部署的 Digit 4 与开发中的 Digit 5。此条保留前代身份；未取得可明确归属 Digit 4 的完整官方参数表，不套用新代参数或第三方常见规格。当前新采购条件待核实。",
+      "description": "官网新代际发布资料明确区分已部署的 Digit 4 与开发中的 Digit 5。此条保留前代身份；未取得可明确归属 Digit 4 的完整官方参数表，不套用新代参数或第三方常见规格。当前新采购条件待核实。图片为 Agility 官方新闻分发的 Digit 4 宣传图，含 AGCO 标识与料箱，不表示计划中的试点已实施。",
       "tags": [
         "Digit",
         "第四代",
         "物流搬运"
       ],
-      "image": "",
+      "image": "assets/agility-digit-4.jpg",
       "specs": {
         "height": {
           "status": "unknown",
@@ -5474,13 +5474,13 @@
       "bodyType": "biped",
       "marketStatus": "pilot",
       "sourceId": "apptronik-apollo-2-launch",
-      "description": "2026 年 6 月官方发布的模块化数据采集与训练平台，双足和轮式分开记录。厂商称在 Robot Park 及客户/伙伴现场运行，采集同时包含遥操作与自主执行；不能把数据采集展示当作全自主商业交付，也不套用旧 Apollo 的尺寸和负载。",
+      "description": "2026 年 6 月官方发布的模块化数据采集与训练平台，双足和轮式分开记录。厂商称在 Robot Park 及客户/伙伴现场运行，采集同时包含遥操作与自主执行；不能把数据采集展示当作全自主商业交付，也不套用旧 Apollo 的尺寸和负载。图片为 Apollo 2 官方双形态同框渲染，左侧双足、右侧轮式；并非两种底座同时标配或实拍交付证明。",
       "tags": [
         "Apollo 2",
         "数据采集",
         "双足"
       ],
-      "image": "",
+      "image": "assets/apptronik-apollo2-biped.jpg",
       "specs": {
         "height": {
           "status": "unknown",
@@ -5619,13 +5619,13 @@
       "bodyType": "wheeled",
       "marketStatus": "pilot",
       "sourceId": "apptronik-apollo-2-launch",
-      "description": "与 Apollo 2 双足版同属模块化平台，使用轮式底座。官方描述是数据采集/训练和伙伴现场运行，包含遥操作与自主执行；轮式设计意图适配现有工业移动机器人安全标准，不等于本库确认取得安全认证。硬件数字规格待补。",
+      "description": "与 Apollo 2 双足版同属模块化平台，使用轮式底座。官方描述是数据采集/训练和伙伴现场运行，包含遥操作与自主执行；轮式设计意图适配现有工业移动机器人安全标准，不等于本库确认取得安全认证。硬件数字规格待补。图片为 Apollo 2 官方双形态同框渲染，左侧双足、右侧轮式；并非两种底座同时标配或实拍交付证明。",
       "tags": [
         "Apollo 2",
         "数据采集",
         "轮式"
       ],
-      "image": "",
+      "image": "assets/apptronik-apollo2-biped.jpg",
       "specs": {
         "height": {
           "status": "unknown",
@@ -5909,13 +5909,13 @@
       "bodyType": "biped",
       "marketStatus": "announced",
       "sourceId": "neura-4ne1-gen4-overview",
-      "description": "官网已介绍 Gen 4 并称正在为系列生产做准备，不能当作已量产交付。页面下方 180 cm/80 kg 等通用规格与所链接 V7 资料表未明确归属 Gen 4；本库暂不继承。相对前代减重 20% 也不用于反推绝对重量。",
+      "description": "官网已介绍 Gen 4 并称正在为系列生产做准备，不能当作已量产交付。页面下方 180 cm/80 kg 等通用规格与所链接 V7 资料表未明确归属 Gen 4；本库暂不继承。相对前代减重 20% 也不用于反推绝对重量。图片为官方 Gen 4 首发活动照片，右侧黑色整机为本型号，画面含人物及另一平台，不作为普遍交付证明。",
       "tags": [
         "第四代",
         "NEURON AI",
         "工业与服务"
       ],
-      "image": "",
+      "image": "assets/neura-4ne1-gen4.webp",
       "specs": {
         "height": {
           "status": "unknown",
@@ -7070,13 +7070,13 @@
       "bodyType": "biped",
       "marketStatus": "announced",
       "sourceId": "limx-oli-overview",
-      "description": "全尺寸研究平台，EDU参数页与概述存在自由度口径差别，保留冲突。主控与感知计算分开，算力背包和其他末端不作为标配。",
+      "description": "全尺寸研究平台，EDU参数页与概述存在自由度口径差别，保留冲突。主控与感知计算分开，算力背包和其他末端不作为标配。图片为官网 Oli 系列局部机身宣传渲染，仅作外观参考，不用于确认 EDU 手部、算力背包等标配。",
       "tags": [
         "全尺寸",
         "科研",
         "二次开发"
       ],
-      "image": "",
+      "image": "assets/limx-oli-series.webp",
       "specs": {
         "height": {
           "status": "known",
@@ -8273,14 +8273,14 @@
       "bodyType": "wheeled",
       "marketStatus": "prototype",
       "sourceId": "sanctuary-phoenix-gen8",
-      "description": "官方第八代发布资料明确轮式底座，面向高质量数据采集与训练；本轮未确认标准化商业整机采购。当前官网更强调跨硬件工业 Physical AI，历史整机资料不能推断现货、完整自主能力或客户收益。第六/七代尺寸与负载不继承。",
+      "description": "官方第八代发布资料明确轮式底座，面向高质量数据采集与训练；本轮未确认标准化商业整机采购。当前官网更强调跨硬件工业 Physical AI，历史整机资料不能推断现货、完整自主能力或客户收益。第六/七代尺寸与负载不继承。图片为官网明确 Gen 8 的汉诺威展会回顾视频封面，右侧展示 Phoenix 上身，含人物与展会标志；不是完整底座图片或自主能力证明。",
       "tags": [
         "第八代",
         "轮式底座",
         "数据采集",
         "研发平台"
       ],
-      "image": "",
+      "image": "assets/sanctuary-phoenix-gen8.jpg",
       "specs": {
         "height": {
           "status": "unknown",

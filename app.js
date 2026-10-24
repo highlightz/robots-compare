@@ -1,5 +1,5 @@
-import { FIELDS, EVIDENCE_TYPES, BODY_TYPES, PRODUCT_STATES, claimFor, titleFor, makerFor, escapeHTML as e, formatClaim, completeness, sameKnownClaims, filterRobots, validateCatalog } from './core.3d4c19c624228511.js';
-import { EDITABLE } from './runtime.3d4c19c624228511.js';
+import { FIELDS, EVIDENCE_TYPES, BODY_TYPES, PRODUCT_STATES, claimFor, titleFor, makerFor, escapeHTML as e, formatClaim, completeness, sameKnownClaims, filterRobots, validateCatalog } from './core.376597bfea85f530.js';
+import { EDITABLE } from './runtime.376597bfea85f530.js';
 
 const $ = selector => document.querySelector(selector);
 const SELECT_KEY = 'robots-compare.selection.v1';
@@ -116,7 +116,7 @@ document.addEventListener('change', async event => {
 document.addEventListener('keydown', event => { if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName) && !$('#editor')?.open && $('#search')) { event.preventDefault(); $('#search').focus(); } });
 window.addEventListener('hashchange', () => { render(); window.scrollTo({ top: 0, behavior: 'instant' }); });
 async function initialize() {
-  const response = await fetch('catalog.3d4c19c624228511.json', { cache: 'no-store' }); if (!response.ok) throw new Error('未能读取 catalog.json');
+  const response = await fetch('catalog.376597bfea85f530.json', { cache: 'no-store' }); if (!response.ok) throw new Error('未能读取 catalog.json');
   const base = await response.json(); const errors = validateCatalog(base); if (errors.length) throw new Error(errors.join('；'));
   state.catalog = base; state.etag = response.headers.get('etag');
   if (EDITABLE) {
