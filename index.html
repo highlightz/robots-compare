@@ -9,7 +9,9 @@
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23182432'/%3E%3Cpath d='M12 15h24v18H12z' fill='none' stroke='%2384e6cc' stroke-width='3'/%3E%3Ccircle cx='19' cy='23' r='2' fill='%2384e6cc'/%3E%3Ccircle cx='29' cy='23' r='2' fill='%2384e6cc'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
-  </head>
+  <script type="module" src="analytics.js" data-analytics="baidu" data-product-ids="unitree-g1-standard,unitree-g1-edu,agibot-a2-ultra,agibot-a2-lite,unitree-h1,unitree-h1-2,agibot-x2-ultra,agibot-g1"></script>
+<link rel="stylesheet" href="analytics.css">
+</head>
   <body>
     <a class="skip-link" href="#main">跳转到内容</a>
     <header class="header">
@@ -21,7 +23,7 @@
       </nav>
     </header>
     <main id="main" tabindex="-1"><div class="loading">正在读取机器人资料…</div></main>
-    <footer class="footer"><a class="footer-brand" href="#/">robotscompare<span> / 独立的产品资料与对比工具</span></a><p>保留未知，标明依据。厂商规格不等同于独立实测。</p><a href="#/sources">数据方法与来源 ↗</a></footer>
+    <footer class="footer"><a class="footer-brand" href="#/">robotscompare<span> / 独立的产品资料与对比工具</span></a><p>保留未知，标明依据。厂商规格不等同于独立实测。</p><a href="#/sources">数据方法与来源 ↗</a><div class="analytics-footer"><button type="button" data-analytics-action="settings">统计设置</button><a href="privacy.html">隐私说明</a></div></footer>
     <aside id="compare-tray" aria-label="已选对比产品"></aside>
     <div id="toast" role="status" aria-live="polite"></div>
     <noscript>此工具需要 JavaScript 才能进行筛选和对比。公开结构化资料保存在 catalog.json。</noscript>
