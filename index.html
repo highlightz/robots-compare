@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f7f8fa">
+    <meta name="description" content="查找、筛选与对比具身智能机器人。按配置记录参数，展示来源、适用条件和审核状态。">
+    <title>Robots Compare — 具身机器人产品库</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23182432'/%3E%3Cpath d='M12 15h24v18H12z' fill='none' stroke='%2384e6cc' stroke-width='3'/%3E%3Ccircle cx='19' cy='23' r='2' fill='%2384e6cc'/%3E%3Ccircle cx='29' cy='23' r='2' fill='%2384e6cc'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到内容</a>
+    <header class="header">
+      <a class="brand" href="#/" aria-label="Robots Compare 首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>robots<span class="brand-light">compare</span><small>具身机器人产品库</small></span></a>
+      <nav aria-label="主导航">
+        <a href="#/" data-nav="catalog">产品目录</a>
+        <a href="#/compare" data-nav="compare">参数对比 <span id="nav-count">0</span></a>
+        <a href="#/sources" data-nav="sources">数据与来源</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading">正在读取机器人资料…</div></main>
+    <footer class="footer"><a class="footer-brand" href="#/">robotscompare<span> / 独立的产品资料与对比工具</span></a><p>保留未知，标明依据。厂商规格不等同于独立实测。</p><a href="#/sources">数据方法与来源 ↗</a></footer>
+    <aside id="compare-tray" aria-label="已选对比产品"></aside>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript>此工具需要 JavaScript 才能进行筛选和对比。公开结构化资料保存在 catalog.json。</noscript>
+  </body>
+</html>

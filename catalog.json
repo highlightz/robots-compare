@@ -1,0 +1,1240 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "updatedAt": "2026-10-23T00:00:00.000Z",
+  "manufacturers": [
+    {
+      "id": "unitree",
+      "name": "宇树科技",
+      "englishName": "Unitree",
+      "website": "https://www.unitree.com/"
+    },
+    {
+      "id": "agibot",
+      "name": "智元机器人",
+      "englishName": "AGIBOT",
+      "website": "https://www.agibot.com/"
+    }
+  ],
+  "sources": [
+    {
+      "id": "unitree-g1",
+      "title": "G1 / G1 EDU 官方规格",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/g1/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-23"
+    },
+    {
+      "id": "unitree-h1",
+      "title": "H1 / H1-2 官方规格",
+      "publisher": "Unitree Robotics",
+      "url": "https://www.unitree.com/h1/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-23"
+    },
+    {
+      "id": "agibot-a2",
+      "title": "A2 Ultra / A2 Lite 官方规格",
+      "publisher": "AGIBOT",
+      "url": "https://www.agibot.com/products/A2_Ultra",
+      "publishedAt": null,
+      "accessedAt": "2026-10-23"
+    },
+    {
+      "id": "agibot-x2",
+      "title": "X2 / X2 Ultra 官方规格",
+      "publisher": "AGIBOT",
+      "url": "https://www.agibot.com/products/X2",
+      "publishedAt": null,
+      "accessedAt": "2026-10-23"
+    },
+    {
+      "id": "agibot-g1",
+      "title": "G1 轮式机器人官方规格",
+      "publisher": "AGIBOT",
+      "url": "https://www.agibot.com/products/G1",
+      "publishedAt": null,
+      "accessedAt": "2026-10-23"
+    }
+  ],
+  "robots": [
+    {
+      "id": "unitree-g1-standard",
+      "productId": "unitree-g1",
+      "manufacturerId": "unitree",
+      "name": "G1",
+      "configuration": "标准版",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "unitree-g1",
+      "description": "紧凑型双足平台。标准版与 EDU 的配置、开发权限和采购价格分别记录。",
+      "tags": [
+        "紧凑型",
+        "双足平台"
+      ],
+      "image": "assets/unitree-g1-product.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 132,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "站立尺寸中的高度",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 35,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值，含电池",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 23,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "标准版整机",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "known",
+          "value": "未配置灵巧手",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方单手自由度栏为 /；不代表不能改装",
+          "checkedAt": "2026-10-23"
+        },
+        "payload": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "手臂最大负载约值，随伸展姿态变化；非全工作范围持续负载",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "runtime": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方约值，任务条件未公开",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_mah": {
+          "status": "known",
+          "value": 9000,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "深度相机 + 3D 激光雷达",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "known",
+          "value": "8 核高性能 CPU",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "known",
+          "value": 13500,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方美元报价；不含税费与运费，非中国市场到手价",
+          "checkedAt": "2026-10-23"
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "unitree-g1-edu",
+      "productId": "unitree-g1",
+      "manufacturerId": "unitree",
+      "name": "G1",
+      "configuration": "EDU 开发版",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "unitree-g1",
+      "description": "面向二次开发的 G1 配置。自由度与重量随选配变化，不能与标准版价格混用。",
+      "tags": [
+        "二次开发",
+        "可选灵巧手"
+      ],
+      "image": "assets/unitree-g1-product.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 132,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": {
+            "min": 35,
+            "max": null
+          },
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方标注约 35 kg+，取决于配置",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": {
+            "min": 23,
+            "max": 43
+          },
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "选配组合范围，并非每台均为 43 DoF",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "known",
+          "value": "选配 Dex3-1 三指灵巧手",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "可选触觉阵列；腕部自由度另有选配",
+          "checkedAt": "2026-10-23"
+        },
+        "payload": {
+          "status": "known",
+          "value": 3,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "手臂最大负载约值，受姿态影响",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "runtime": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "任务条件未公开",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_mah": {
+          "status": "known",
+          "value": 9000,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "深度相机 + 3D 激光雷达",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "known",
+          "value": "8 核 CPU；可选 Orin 等计算模块",
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "Orin 不视为基础标配",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "known",
+          "value": true,
+          "sourceId": "unitree-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网明确支持二次开发；控制范围以开发手册为准",
+          "checkedAt": "2026-10-23"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "agibot-a2-ultra",
+      "productId": "agibot-a2",
+      "manufacturerId": "agibot",
+      "name": "远征 A2",
+      "configuration": "Ultra",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "agibot-a2",
+      "description": "全尺寸交互与展演平台，记录 Ultra 配置的传感、操作与能源规格。",
+      "tags": [
+        "全尺寸",
+        "交互",
+        "展演"
+      ],
+      "image": "assets/agibot-a2-ultra.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 169,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 69,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 40,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "known",
+          "value": "6 DoF 灵巧手",
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "payload": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方最大手臂负载约值；具体姿态条件未给出",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "known",
+          "value": 1.2,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方最高行走速度",
+          "checkedAt": "2026-10-23"
+        },
+        "runtime": {
+          "status": "known",
+          "value": {
+            "min": 1.5,
+            "max": null
+          },
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "步行 1.5 h+；另列站立 3 h，不能相加",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_mah": {
+          "status": "known",
+          "value": 14400,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sensors": {
+          "status": "known",
+          "value": "3D 激光雷达、RGB-D、RGB、鱼眼相机",
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "known",
+          "value": "16 核 CPU + NVIDIA Jetson Orin 64G",
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "agibot-a2-lite",
+      "productId": "agibot-a2",
+      "manufacturerId": "agibot",
+      "name": "远征 A2",
+      "configuration": "Lite",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "agibot-a2",
+      "description": "A2 系列的展演配置。与 Ultra 分开记录，不继承其感知与计算选项。",
+      "tags": [
+        "全尺寸",
+        "展演"
+      ],
+      "image": "assets/agibot-a2-lite.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 169,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 64,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 23,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "payload": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方最大手臂负载约值；姿态条件未给出",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "known",
+          "value": 0.8,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方最高行走速度",
+          "checkedAt": "2026-10-23"
+        },
+        "runtime": {
+          "status": "known",
+          "value": {
+            "min": 1.5,
+            "max": null
+          },
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "步行 1.5 h+；另列站立 4.5 h",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_mah": {
+          "status": "known",
+          "value": 14400,
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sensors": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "compute": {
+          "status": "known",
+          "value": "16 核高性能 CPU",
+          "sourceId": "agibot-a2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "unitree-h1",
+      "productId": "unitree-h1",
+      "manufacturerId": "unitree",
+      "name": "H1",
+      "configuration": "标准配置",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "unitree-h1",
+      "description": "全尺寸双足研究平台。官方同时列出实录移动速度与潜在性能，本库只记录前者。",
+      "tags": [
+        "全尺寸",
+        "运动研究"
+      ],
+      "image": "assets/unitree-h1-product.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 180,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网概述约值；尺寸表为 1805 mm，存在取整差异",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 47,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "speed": {
+          "status": "known",
+          "value": 3.3,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网记录的移动速度；不是其标注的潜在 >5 m/s",
+          "checkedAt": "2026-10-23"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_wh": {
+          "status": "known",
+          "value": 864,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sensors": {
+          "status": "known",
+          "value": "3D 激光雷达 + 深度相机",
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "unitree-h1-2",
+      "productId": "unitree-h1-2",
+      "manufacturerId": "unitree",
+      "name": "H1-2",
+      "configuration": "标准配置",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "unitree-h1",
+      "description": "H1 的后续型号，采用独立参数记录，不能沿用 H1 的速度或重量。",
+      "tags": [
+        "全尺寸",
+        "双足平台"
+      ],
+      "image": "assets/unitree-h1-2.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 178,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网概述约值；尺寸表约 1788 mm",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 70,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 27,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "payload": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "speed": {
+          "status": "known",
+          "value": {
+            "min": null,
+            "max": 2
+          },
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方原文 <2 m/s；范围显示上界，严格小于关系见本条件",
+          "checkedAt": "2026-10-23"
+        },
+        "runtime": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_wh": {
+          "status": "known",
+          "value": 864,
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sensors": {
+          "status": "known",
+          "value": "3D 激光雷达 + 深度相机",
+          "sourceId": "unitree-h1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "agibot-x2-ultra",
+      "productId": "agibot-x2",
+      "manufacturerId": "agibot",
+      "name": "灵犀 X2",
+      "configuration": "Ultra",
+      "bodyType": "biped",
+      "marketStatus": "unknown",
+      "sourceId": "agibot-x2",
+      "description": "紧凑型交互平台。Ultra 的雷达、深度感知和开发支持独立于 X2 基础型号。",
+      "tags": [
+        "紧凑型",
+        "二次开发",
+        "交互"
+      ],
+      "image": "assets/agibot-x2-portrait.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": 131,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 39,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 30,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "known",
+          "value": "选配 OmniHand / OmniPicker",
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "末端执行器不是标配",
+          "checkedAt": "2026-10-23"
+        },
+        "payload": {
+          "status": "known",
+          "value": 3,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "特定姿态最大值，不含末端执行器；全范围 ≤1 kg",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "known",
+          "value": 1.8,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官方最高值；典型 ≤0.8 m/s，实验室 ≤2 m/s，口径不可混用",
+          "checkedAt": "2026-10-23"
+        },
+        "runtime": {
+          "status": "known",
+          "value": 2,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "以 0.5 m/s 步行，约值",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "known",
+          "value": 500,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "约值",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sensors": {
+          "status": "known",
+          "value": "激光雷达、RGB-D、前双目 RGB、后 RGB、头部触摸",
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "known",
+          "value": "RK3588 ×2 + Orin NX（157 TOPS）",
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "known",
+          "value": true,
+          "sourceId": "agibot-x2",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网列为支持二次开发",
+          "checkedAt": "2026-10-23"
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    },
+    {
+      "id": "agibot-g1",
+      "productId": "agibot-g1",
+      "manufacturerId": "agibot",
+      "name": "智元 G1",
+      "configuration": "标准配置",
+      "bodyType": "wheeled",
+      "marketStatus": "unknown",
+      "sourceId": "agibot-g1",
+      "description": "轮式双臂作业平台。身高为升降范围；自由度在官网不同段落有口径差异，保留冲突提示。",
+      "tags": [
+        "轮式双臂",
+        "可升降",
+        "数据采集"
+      ],
+      "image": "assets/agibot-g1.png",
+      "specs": {
+        "height": {
+          "status": "known",
+          "value": {
+            "min": 130,
+            "max": 180
+          },
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "升降高度范围",
+          "checkedAt": "2026-10-23"
+        },
+        "weight": {
+          "status": "known",
+          "value": 150,
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "dof": {
+          "status": "known",
+          "value": 20,
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "conflicting",
+          "condition": "规格栏 20 DoF（不含末端）；文案另列 26 DoF，尚待厂商澄清，不参与数值筛选",
+          "checkedAt": "2026-10-23"
+        },
+        "hand": {
+          "status": "known",
+          "value": "6 DoF 末端，可换两指夹爪",
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网未充分说明此自由度统计范围",
+          "checkedAt": "2026-10-23"
+        },
+        "payload": {
+          "status": "known",
+          "value": 3,
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网描述单臂持物连续运行；未给完整测试工况",
+          "checkedAt": "2026-10-23"
+        },
+        "speed": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "runtime": {
+          "status": "known",
+          "value": {
+            "min": 4,
+            "max": null
+          },
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网 4 h+，任务条件未公开",
+          "checkedAt": "2026-10-23"
+        },
+        "battery_wh": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "battery_mah": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "sensors": {
+          "status": "known",
+          "value": "RGB-D 相机 ×3、鱼眼相机 ×5",
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "官网另有底盘雷达描述，配置待核对",
+          "checkedAt": "2026-10-23"
+        },
+        "compute": {
+          "status": "known",
+          "value": "Jetson AGX Orin 64GB",
+          "sourceId": "agibot-g1",
+          "evidenceType": "manufacturer",
+          "reviewStatus": "reviewed",
+          "condition": "",
+          "checkedAt": "2026-10-23"
+        },
+        "sdk": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_usd": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        },
+        "price_cny": {
+          "status": "unknown",
+          "value": null,
+          "sourceId": null,
+          "evidenceType": "manufacturer",
+          "reviewStatus": "pending_review",
+          "condition": "",
+          "checkedAt": null
+        }
+      }
+    }
+  ],
+  "revisions": []
+}
