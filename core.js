@@ -17,7 +17,7 @@ export const FIELDS = [
 export const VALUE_STATES = { known: '已收录', not_disclosed: '未公开', unknown: '待核实', not_applicable: '不适用' };
 export const REVIEW_STATES = { reviewed: '已核对原文', pending_review: '待审核', conflicting: '存在冲突' };
 export const EVIDENCE_TYPES = { manufacturer: '厂商资料', third_party: '第三方测试', user_report: '用户反馈', estimate: '编辑估算' };
-export const BODY_TYPES = { biped: '双足人形', wheeled: '轮式人形', quadruped: '四足机器人' };
+export const BODY_TYPES = { biped: '双足人形', wheeled: '轮式人形', multiform: '多形态平台', quadruped: '四足机器人' };
 export const PRODUCT_STATES = { announced: '已发布', prototype: '原型', preorder: '预订', pilot: '试点', available: '可采购', discontinued: '已停产', unknown: '状态待核实' };
 export const unknownClaim = () => ({ status: 'unknown', value: null, sourceId: null, evidenceType: 'manufacturer', reviewStatus: 'pending_review', condition: '', checkedAt: null });
 export const claimFor = (robot, key) => robot.specs[key] || unknownClaim();

@@ -15,7 +15,7 @@ function toast(message) { $('#toast').textContent = message; $('#toast').classLi
 function image(r, className = '') { return r.image ? `<img class="${className}" src="${e(r.image)}" alt="${e(titleFor(r))} 厂商产品图" loading="lazy">` : `<div class="image-placeholder ${className}"><span>▥</span>暂无产品图</div>`; }
 function evidence(c) { return c.status === 'known' ? `<span class="evidence ${c.reviewStatus === 'conflicting' ? 'warning' : ''}">${e(c.reviewStatus === 'conflicting' ? '口径冲突' : c.reviewStatus === 'pending_review' ? `待审核 · ${EVIDENCE_TYPES[c.evidenceType]}` : EVIDENCE_TYPES[c.evidenceType])}</span>` : ''; }
 function selectionButton(r, small = false) { if (r.archived) return '<span class="pill neutral">已归档</span>'; const selected = state.selected.includes(r.id); return `<button type="button" class="${small ? 'icon-button' : 'select-button'} ${selected ? 'selected' : ''}" data-action="select" data-id="${e(r.id)}" aria-pressed="${selected}" aria-label="${selected ? '移除对比' : '加入对比'} ${e(titleFor(r))}">${selected ? '✓' : '+'}${small ? '' : selected ? ' 已加入对比' : ' 加入对比'}</button>`; }
-function price(r) { for (const k of ['price_cny', 'price_usd']) { const c = claimFor(r, k); if (c.status === 'known') return `${k === 'price_usd' ? '$' : '¥'}${formatClaim(c, field(k), false)}`; } return '未公开报价'; }
+function price(r) { for (const k of ['price_cny', 'price_usd']) { const c = claimFor(r, k); if (c.status === 'known') return `${k === 'price_usd' ? '$' : '¥'}${formatClaim(c, field(k), false)}`; } return '报价待补'; }
 function saveSelection() { try { localStorage.setItem(SELECT_KEY, JSON.stringify(state.selected)); } catch { /* Selection persistence is optional. */ } }
 function renderTray() {
   $('#nav-count').textContent = state.selected.length;
