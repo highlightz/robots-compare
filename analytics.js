@@ -111,7 +111,7 @@ async function boot() {
   if (!config) return;
   // App renders first, so analytics never prevents catalog loading or delays its UI.
   if (config.dataset.staticPage !== 'true' && !location.pathname.endsWith('/privacy.html')) {
-    const { ready } = await import('./app.b21087260de70965.js');
+    const { ready } = await import('./app.badb4b3df017cc9d.js');
     await ready;
   }
   let storage;
