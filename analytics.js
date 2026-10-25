@@ -4,9 +4,16 @@ export const BAIDU_SITE_ID = '4d6aec1c3574f8b89625f82f9225d478';
 const ORIGIN = 'https://highlightz.github.io';
 const BASE = '/robots-compare/';
 
-export function analyticsPath(location, productIds = []) {
+export function analyticsPath(location, productIds = [], guideIds = []) {
   if (location.origin !== ORIGIN) return null;
   if (location.pathname === BASE + 'privacy.html') return BASE + 'privacy.html';
+  for (const index of ['robots', 'guides']) {
+    if ([BASE + index + '/', BASE + index + '/index.html'].includes(location.pathname)) return BASE + index + '/';
+  }
+  for (const [folder, ids] of [['robots', productIds], ['guides', guideIds]]) {
+    const match = location.pathname.match(new RegExp('^' + BASE + folder + '/([a-z][a-z0-9-]*)/(?:index\\.html)?$'));
+    if (match && ids.includes(match[1])) return BASE + folder + '/' + match[1];
+  }
   if (![BASE, BASE + 'index.html'].includes(location.pathname)) return null;
   const route = (location.hash || '#/').slice(1).split('?')[0];
   if (['/', '/compare', '/sources'].includes(route)) return BASE + route.slice(1);
@@ -14,8 +21,8 @@ export function analyticsPath(location, productIds = []) {
   return null; // Unknown/custom URLs and workspace routes are never manually reported.
 }
 
-export function createAnalytics({ window: win, document: doc, productIds = [], storage }) {
-  if (win.location.origin !== ORIGIN || ![BASE, BASE + 'index.html', BASE + 'privacy.html'].includes(win.location.pathname)) return null;
+export function createAnalytics({ window: win, document: doc, productIds = [], guideIds = [], storage }) {
+  if (win.location.origin !== ORIGIN || (![BASE, BASE + 'index.html'].includes(win.location.pathname) && !analyticsPath(win.location, productIds, guideIds))) return null;
   if (win.__robotsCompareAnalytics) return win.__robotsCompareAnalytics;
   const read = () => { try { return storage?.getItem(CONSENT_KEY); } catch { return null; } };
   const write = value => { try { storage?.setItem(CONSENT_KEY, value); } catch { /* Session-only choice if storage is unavailable. */ } };
@@ -26,7 +33,7 @@ export function createAnalytics({ window: win, document: doc, productIds = [], s
   let script = null;
   const report = () => {
     if (choice !== 'accepted' || blocked()) return;
-    const path = analyticsPath(win.location, productIds);
+    const path = analyticsPath(win.location, productIds, guideIds);
     if (!path) { lastPath = null; return; }
     if (path === lastPath) return;
     lastPath = path;
@@ -55,7 +62,7 @@ export function createAnalytics({ window: win, document: doc, productIds = [], s
   panel.className = 'analytics-consent';
   panel.setAttribute('role', 'region');
   panel.setAttribute('aria-label', '访问统计选择');
-  panel.innerHTML = '<div><h2>帮助我们了解网站使用情况</h2><p>同意后启用百度统计，分析访问量、页面和来源。百度可能处理 IP、设备信息及 Cookie。拒绝不会影响浏览。</p><a href="privacy.html">阅读隐私说明</a><span class="analytics-choice-status" aria-live="polite"></span></div><div class="analytics-consent-actions"><button type="button" data-consent="declined">拒绝统计</button><button type="button" data-consent="accepted">同意统计</button></div>';
+  panel.innerHTML = '<div><h2>帮助我们了解网站使用情况</h2><p>同意后启用百度统计，分析访问量、页面和来源。百度可能处理 IP、设备信息及 Cookie。拒绝不会影响浏览。</p><a href="' + BASE + 'privacy.html">阅读隐私说明</a><span class="analytics-choice-status" aria-live="polite"></span></div><div class="analytics-consent-actions"><button type="button" data-consent="declined">拒绝统计</button><button type="button" data-consent="accepted">同意统计</button></div>';
   doc.body.appendChild(panel);
   const show = () => {
     panel.hidden = false;
@@ -103,13 +110,13 @@ async function boot() {
   const config = document.querySelector('script[data-analytics="baidu"]');
   if (!config) return;
   // App renders first, so analytics never prevents catalog loading or delays its UI.
-  if (!location.pathname.endsWith('/privacy.html')) {
-    const { ready } = await import('./app.js');
+  if (config.dataset.staticPage !== 'true' && !location.pathname.endsWith('/privacy.html')) {
+    const { ready } = await import('./app.b21087260de70965.js');
     await ready;
   }
   let storage;
   try { storage = window.localStorage; } catch { /* Ask again on the next visit. */ }
-  createAnalytics({ window, document, storage, productIds: (config.dataset.productIds || '').split(',').filter(Boolean) });
+  createAnalytics({ window, document, storage, productIds: (config.dataset.productIds || '').split(',').filter(Boolean), guideIds: (config.dataset.guideIds || '').split(',').filter(Boolean) });
 }
 if (typeof document !== 'undefined' && typeof window !== 'undefined') {
   boot().catch(() => { /* Do not fail the product UI if an optional integration fails. */ });
