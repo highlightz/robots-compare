@@ -1,9 +1,10 @@
-import { FIELDS, EVIDENCE_TYPES, BODY_TYPES, PRODUCT_STATES, claimFor, titleFor, makerFor, escapeHTML as e, formatClaim, completeness, sameKnownClaims, filterRobots, validateCatalog } from './core.badb4b3df017cc9d.js';
-import { EDITABLE } from './runtime.badb4b3df017cc9d.js';
+import { FIELDS, EVIDENCE_TYPES, BODY_TYPES, PRODUCT_STATES, claimFor, titleFor, makerFor, escapeHTML as e, formatClaim, completeness, sameKnownClaims, filterRobots, validateCatalog } from './core.e1b56426ce3f5f32.js';
+import { EDITABLE } from './runtime.e1b56426ce3f5f32.js';
+import { SELECT_KEY, loadSelection, saveSelection as persistSelection } from './selection.e1b56426ce3f5f32.js';
 
 const $ = selector => document.querySelector(selector);
-const productHref = r => !EDITABLE && $('meta[name="robots-product-pages"]') ? `robots/${e(r.id)}/` : `#/robots/${e(r.id)}`;
-const SELECT_KEY = 'robots-compare.selection.v1';
+// Stay within the app while choosing products; static pages are search entries.
+const productHref = r => `#/robots/${e(r.id)}`;
 const state = { catalog: null, mode: EDITABLE ? 'file' : 'visitor', etag: null, selected: [], view: 'cards', filters: { q: '', body: '', brand: '', sdk: false, priced: false, minHeight: '', maxPrice: '', currency: 'USD', sort: 'default' }, differences: false, editorId: null, busy: false, recovery: null, editorDirty: false };
 let editor = null;
 let toastTimer;
@@ -17,7 +18,7 @@ function image(r, className = '') { return r.image ? `<img class="${className}" 
 function evidence(c) { return c.status === 'known' ? `<span class="evidence ${c.reviewStatus === 'conflicting' ? 'warning' : ''}">${e(c.reviewStatus === 'conflicting' ? '口径冲突' : c.reviewStatus === 'pending_review' ? `待审核 · ${EVIDENCE_TYPES[c.evidenceType]}` : EVIDENCE_TYPES[c.evidenceType])}</span>` : ''; }
 function selectionButton(r, small = false) { if (r.archived) return '<span class="pill neutral">已归档</span>'; const selected = state.selected.includes(r.id); return `<button type="button" class="${small ? 'icon-button' : 'select-button'} ${selected ? 'selected' : ''}" data-action="select" data-id="${e(r.id)}" aria-pressed="${selected}" aria-label="${selected ? '移除对比' : '加入对比'} ${e(titleFor(r))}">${selected ? '✓' : '+'}${small ? '' : selected ? ' 已加入对比' : ' 加入对比'}</button>`; }
 function price(r) { for (const k of ['price_cny', 'price_usd']) { const c = claimFor(r, k); if (c.status === 'known') return `${k === 'price_usd' ? '$' : '¥'}${formatClaim(c, field(k), false)}`; } return '报价待补'; }
-function saveSelection() { try { localStorage.setItem(SELECT_KEY, JSON.stringify(state.selected)); } catch { /* Selection persistence is optional. */ } }
+function saveSelection() { try { persistSelection(localStorage, state.selected); } catch { /* Selection persistence is optional. */ } }
 function renderTray() {
   $('#nav-count').textContent = state.selected.length;
   const selected = state.selected.map(robotFor).filter(Boolean);
@@ -117,15 +118,23 @@ document.addEventListener('change', async event => {
 });
 document.addEventListener('keydown', event => { if (event.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName) && !$('#editor')?.open && $('#search')) { event.preventDefault(); $('#search').focus(); } });
 window.addEventListener('hashchange', () => { render(); window.scrollTo({ top: 0, behavior: 'instant' }); });
+function syncSelection() {
+  if (!state.catalog) return;
+  try { state.selected = loadSelection(localStorage, state.catalog.robots.filter(r => !r.archived).map(r => r.id)); } catch { return; }
+  if (parseRoute().path === '/compare') location.hash = `/compare?ids=${state.selected.join(',')}`;
+  render();
+}
+window.addEventListener('storage', event => { if (event.key === SELECT_KEY || event.key === null) syncSelection(); });
+window.addEventListener('pageshow', event => { if (event.persisted) syncSelection(); });
 async function initialize() {
-  const response = await fetch('catalog.badb4b3df017cc9d.json', { cache: 'no-store' }); if (!response.ok) throw new Error('未能读取 catalog.json');
+  const response = await fetch('catalog.e1b56426ce3f5f32.json', { cache: 'no-store' }); if (!response.ok) throw new Error('未能读取 catalog.json');
   const base = await response.json(); const errors = validateCatalog(base); if (errors.length) throw new Error(errors.join('；'));
   state.catalog = base; state.etag = response.headers.get('etag');
   if (EDITABLE) {
     const { createEditor } = await import('./editor.js');
     editor = createEditor({ state, $, render, toast, robotFor, options, saveSelection });
   }
-  try { state.selected = JSON.parse(localStorage.getItem(SELECT_KEY) || '[]').filter(id => robotFor(id) && !robotFor(id).archived).slice(0, 4); } catch { state.selected = []; }
+  try { state.selected = loadSelection(localStorage, state.catalog.robots.filter(r => !r.archived).map(r => r.id)); } catch { state.selected = []; }
   render();
 }
 export const ready = initialize().catch(error => { $('#main').innerHTML = `<div class="empty-state"><h1>资料暂时无法加载</h1><p>${e(error.message)}</p><button class="button" onclick="location.reload()">重新加载</button></div>`; });

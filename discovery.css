@@ -40,3 +40,13 @@
 }
 .header nav { min-width: 0; overflow-x: auto; }
 .header nav a { white-space: nowrap; flex-shrink: 0; }
+.static-select { margin-top: 12px; font-size: 13px; }
+.static-select.selected { background: #e5f2ec; color: #285d4d; border-color: #7ca996; }
+.static-comparison-status { position: fixed; bottom: 110px; left: 50%; transform: translateX(-50%); width: min(900px, calc(100% - 36px)); margin: 0; padding: 12px 20px; background: #edf5f0; color: #285d4d; border: 1px solid #bfd5c8; border-radius: 8px; z-index: 12; }
+.static-comparison-status:empty { display: none; }
+#compare-tray [aria-disabled="true"] { opacity: .6; cursor: default; }
+#compare-tray .button { white-space: nowrap; }
+@media (max-width: 760px) {
+  #compare-tray .static-continue { display: none; }
+  .static-comparison-status { bottom: 100px; }
+}
